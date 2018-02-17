@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruby on Rails Tutorial: sample application</title>
+    <link href="/railsapp1/assets/css/style.css?v=c99b31409ad4ca6fe9abab27580b04a22c3e91d1" rel="stylesheet">
+  </head>
+  <script>
+  window.intercomSettings = {
+    app_id: "tibxhfl1"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/tibxhfl1';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+      <script src="/railsapp1/assets/javascript/anchor-js/anchor.min.js"></script>
+    <script>anchors.add();</script>
+  <body>
+    <div class="container markdown-body">
+      <h1 id="ruby-on-rails-tutorial-sample-application">Ruby on Rails Tutorial: sample application</h1>
+
+<p><strong>This repository is not current or maintained. See <a href="https://www.railstutorial.org/help">www.railstutorial.org/help</a> for the current version of the sample app.</strong></p>
+
+<p>This is the sample application for
+<a href="http://railstutorial.org/"><em>Ruby on Rails Tutorial: Learn Web Development with Rails</em></a>
+by <a href="http://michaelhartl.com/">Michael Hartl</a>. You can use this reference implementation to help track down errors if you end up having trouble with code in the tutorial. In particular, as a first debugging check I suggest getting the test suite to pass on your local machine:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd /tmp
+git clone https://github.com/railstutorial/sample_app_rails_4.git
+cd sample_app_rails_4
+cp config/database.yml.example config/database.yml
+bundle install --without production
+bundle exec rake db:migrate
+bundle exec rake db:test:prepare
+bundle exec rspec spec/
+</code></pre>
+</div>
+
+<p>If the tests don’t pass, it means there may be something wrong with your system. If they do pass, then you can debug your code by comparing it with the reference implementation.</p>
+
+      <h2>Install this Cool Slack Integration</h2>
+<a href="https://slack.com/oauth/authorize?scope=commands,bot,users:read,channels:read,channels:write,im:write,im:history,im:read,chat:write:user,chat:write:bot,chat:write:user,channels:history&client_id=124659995571.136428340465"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+
+
+    </div>
+    <script type="text/javascript">window.Intercom("show");</script>
+  </body>
+</html>
